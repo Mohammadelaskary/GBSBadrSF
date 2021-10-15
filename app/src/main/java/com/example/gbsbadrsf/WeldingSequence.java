@@ -19,7 +19,7 @@ import com.example.gbsbadrsf.productionsequence.productionsequenceadapter;
 
 public class WeldingSequence extends Fragment {
     FragmentWeldingSequenceBinding fragmentWeldingSequenceBinding;
-    productionsequenceadapter productionsequenceadapter;
+    //productionsequenceadapter productionsequenceadapter;
     public RecyclerView recyclerView;
 
 
@@ -40,8 +40,8 @@ public class WeldingSequence extends Fragment {
 
 
     private void initViews() {
-        productionsequenceadapter = new productionsequenceadapter();
-        fragmentWeldingSequenceBinding.defectqtnRv.setAdapter(productionsequenceadapter);
+       // productionsequenceadapter = new productionsequenceadapter();
+        //fragmentWeldingSequenceBinding.defectqtnRv.setAdapter(productionsequenceadapter);
         fragmentWeldingSequenceBinding.defectqtnRv.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 

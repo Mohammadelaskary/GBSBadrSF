@@ -33,7 +33,6 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/qcnotes"
-        app:layout_constraintEnd_toStartOf="@id/productionrepair"
         app:layout_constraintTop_toTopOf="@id/qcnotes"
         android:text="noise sound from motor"
         android:layout_marginStart="50dp"

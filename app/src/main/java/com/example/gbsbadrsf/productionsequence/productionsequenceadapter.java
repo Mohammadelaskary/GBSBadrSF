@@ -11,56 +11,69 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gbsbadrsf.R;
+import com.example.gbsbadrsf.data.response.Ppr;
 import com.example.gbsbadrsf.databinding.DefectinproductionrepstatusLstBinding;
 import com.example.gbsbadrsf.databinding.ProductionsequenceRvBinding;
 import com.example.gbsbadrsf.productionrepairstaus.ProductionrepstatusAdapter;
 
+import java.util.List;
+
 public class productionsequenceadapter  extends RecyclerView.Adapter<productionsequenceadapter.productionsequenceViewHolder> {
-    ProductionsequenceRvBinding productionsequenceRvBinding;
+    //ProductionsequenceRvBinding productionsequenceRvBinding;
+    List<Ppr> Productionsequenceresponse;
+    public productionsequenceadapter(List<Ppr> productionsequenceresponse) {
+        this.Productionsequenceresponse = productionsequenceresponse;
+    }
+  
+
     @NonNull
     @Override
-    public productionsequenceadapter.productionsequenceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        productionsequenceRvBinding = ProductionsequenceRvBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
+    public productionsequenceViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        ProductionsequenceRvBinding productionsequenceRvBinding = ProductionsequenceRvBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
         return new productionsequenceadapter.productionsequenceViewHolder(productionsequenceRvBinding);
     }
 
     @Override
     public void onBindViewHolder(@NonNull productionsequenceadapter.productionsequenceViewHolder holder, int position) {
-    if (position==0){
-       productionsequenceRvBinding.productionrepair.setTextColor(Color.parseColor("#FF0000"));
-       productionsequenceRvBinding.defectnameCheckBox.setTextColor(Color.parseColor("#FF0000"));
-       productionsequenceRvBinding.productionnotes.setTextColor(Color.parseColor("#FF0000"));
-        productionsequenceRvBinding.qcnotes.setTextColor(Color.parseColor("#FF0000"));
-
-productionsequenceRvBinding.productionrepair.setText("Not ok");
-
-    }
-    else if (position==1){
-        productionsequenceRvBinding.defectnameCheckBox.setText("2");
-
-    }
-    else {
-        productionsequenceRvBinding.defectnameCheckBox.setText("3");
-
-
-    }
+//    if (position==0){
+//       productionsequenceRvBinding.productionrepair.setTextColor(Color.parseColor("#FF0000"));
+//       productionsequenceRvBinding.defectnameCheckBox.setTextColor(Color.parseColor("#FF0000"));
+//       productionsequenceRvBinding.productionnotes.setTextColor(Color.parseColor("#FF0000"));
+//        productionsequenceRvBinding.qcnotes.setTextColor(Color.parseColor("#FF0000"));
+//
+//productionsequenceRvBinding.productionrepair.setText("Not ok");
+//
+//    }
+//    else if (position==1){
+//        productionsequenceRvBinding.defectnameCheckBox.setText("2");
+//
+//    }
+//    else {
+//        productionsequenceRvBinding.defectnameCheckBox.setText("3");
+//
+//
+//    }
+        holder.sequencenumber.setText(Productionsequenceresponse.get(position).getLoadingSequenceNumber());
+        holder.childdesc.setText(Productionsequenceresponse.get(position).getChildDescription());
+        holder.loadingqty.setText(Productionsequenceresponse.get(position).getLoadingQty());
+        holder.status.setText(Productionsequenceresponse.get(position).getLoadingSequenceStatus());
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return Productionsequenceresponse.size();
     }
     class productionsequenceViewHolder extends RecyclerView.ViewHolder{
+        CheckBox sequencenumber;
 
-        TextView defectname,Qcnotes,Productionnotes;
-        CheckBox sequence;
+        TextView childdesc,loadingqty,status;
 
         public productionsequenceViewHolder(@NonNull ProductionsequenceRvBinding itemView) {
             super(itemView.getRoot());
-            //defectname=itemView.productionrepair;
-            //Qcnotes=itemView.qcnotes;
-            //Productionnotes=itemView.productionnotes;
-            //sequence=itemView.defectnameCheckBox;
+            sequencenumber=itemView.sequencenumCheckBox;
+            childdesc=itemView.childdesc;
+            loadingqty=itemView.loadingqty;
+            status=itemView.status;
         }
     }
 

@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <CheckBox
-        android:id="@+id/defectname_checkBox"
+        android:id="@+id/sequencenum_checkBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="1"
@@ -14,11 +14,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     <TextView
-        android:id="@+id/qcnotes"
+        android:id="@+id/childdesc"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/defectname_checkBox"
-        app:layout_constraintTop_toTopOf="@id/defectname_checkBox"
+        app:layout_constraintStart_toEndOf="@id/sequencenum_checkBox"
+        app:layout_constraintTop_toTopOf="@id/sequencenum_checkBox"
         app:layout_constraintEnd_toStartOf="@+id/productionnotes"
         android:layout_marginStart="100dp"
         android:text="@string/childdesc_txt"
@@ -26,12 +26,12 @@
         style="@style/styleoftext"
         />
     <TextView
-        android:id="@+id/productionnotes"
+        android:id="@+id/loadingqty"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/qcnotes"
-        app:layout_constraintEnd_toStartOf="@id/productionrepair"
-        app:layout_constraintTop_toTopOf="@id/qcnotes"
+        app:layout_constraintStart_toEndOf="@id/childdesc"
+        app:layout_constraintEnd_toStartOf="@id/status"
+        app:layout_constraintTop_toTopOf="@id/childdesc"
         android:text="250"
         android:layout_marginStart="50dp"
         android:textSize="16sp"
@@ -39,12 +39,13 @@
         android:layout_marginTop="10dp"
         />
     <TextView
-        android:id="@+id/productionrepair"
+        android:id="@+id/status"
         android:layout_width="370dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/qcnotes"
-        app:layout_constraintStart_toEndOf="@+id/productionnotes"
+        app:layout_constraintTop_toTopOf="@id/childdesc"
+        app:layout_constraintStart_toEndOf="@+id/loadingqty"
         android:layout_marginStart="40dp"
+
         android:layout_marginTop="10dp"
         android:text="ok"
         android:textSize="16sp"
