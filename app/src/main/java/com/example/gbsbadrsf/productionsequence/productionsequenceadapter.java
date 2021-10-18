@@ -16,13 +16,19 @@ import com.example.gbsbadrsf.databinding.DefectinproductionrepstatusLstBinding;
 import com.example.gbsbadrsf.databinding.ProductionsequenceRvBinding;
 import com.example.gbsbadrsf.productionrepairstaus.ProductionrepstatusAdapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class productionsequenceadapter  extends RecyclerView.Adapter<productionsequenceadapter.productionsequenceViewHolder> {
     //ProductionsequenceRvBinding productionsequenceRvBinding;
-    List<Ppr> Productionsequenceresponse;
+    private List<Ppr> Productionsequenceresponse;
     public productionsequenceadapter(List<Ppr> productionsequenceresponse) {
         this.Productionsequenceresponse = productionsequenceresponse;
+    }
+    public void getproductionsequencelist(List<Ppr> productionsequencelst){
+        Productionsequenceresponse.clear();
+        Productionsequenceresponse.addAll(productionsequencelst);
+        notifyDataSetChanged();
     }
   
 
@@ -53,10 +59,10 @@ public class productionsequenceadapter  extends RecyclerView.Adapter<productions
 //
 //
 //    }
-        holder.sequencenumber.setText(Productionsequenceresponse.get(position).getLoadingSequenceNumber());
+        holder.sequencenumber.setText(Productionsequenceresponse.get(position).getLoadingSequenceNumber().toString());
         holder.childdesc.setText(Productionsequenceresponse.get(position).getChildDescription());
-        holder.loadingqty.setText(Productionsequenceresponse.get(position).getLoadingQty());
-        holder.status.setText(Productionsequenceresponse.get(position).getLoadingSequenceStatus());
+        holder.loadingqty.setText(Productionsequenceresponse.get(position).getLoadingQty().toString());
+        holder.status.setText(Productionsequenceresponse.get(position).getLoadingSequenceStatus().toString());
     }
 
     @Override

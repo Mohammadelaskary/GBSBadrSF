@@ -4,41 +4,19 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class APIResponse<T> {
-    @SerializedName("modelState")
-    @Expose
-    private int modelState;
-    @SerializedName("message")
-    @Expose
-    private String message;
-    @SerializedName("status")
-    @Expose
-    private int status;
-    @SerializedName("data")
+
+    @SerializedName("pprList")
     @Expose
     private T data;
-
-    public int getModelState() {
-        return modelState;
+    @SerializedName("responseStatus")
+    @Expose
+    private ResponseStatus responseStatus;
+    public ResponseStatus getResponseStatus() {
+        return responseStatus;
     }
 
-    public void setModelState(int modelState) {
-        this.modelState = modelState;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
+    public void setResponseStatus(ResponseStatus responseStatus) {
+        this.responseStatus = responseStatus;
     }
 
     public T getData() {

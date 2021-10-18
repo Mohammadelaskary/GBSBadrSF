@@ -83,10 +83,12 @@ public class ProductionSequence extends DaggerFragment {
     private void attachListeners() {
 
         viewModel.getProductionsequenceResponse().observe(getViewLifecycleOwner(), cuisines->{
-            productionsequenceresponse.clear();
-            if(cuisines!=null)
-            productionsequenceresponse.addAll(cuisines);
-            adapter.notifyDataSetChanged();
+//            productionsequenceresponse.clear();
+//            //if(cuisines!=null)
+//            productionsequenceresponse.addAll(cuisines);
+//            adapter.getproductionsequencelist(productionsequenceresponse);
+            adapter.getproductionsequencelist(cuisines);
+
         });
         fragmentProductionSequenceBinding.newloadingBtn.setOnClickListener(__ -> {
 
