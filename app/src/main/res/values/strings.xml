@@ -138,6 +138,21 @@
     <string name="signoff_items">Signoff Items</string>
     <string name="machine_wip">Machine WIP</string>
     <string name="new_request">New request</string>
+    <string name="quality_operation">Quality Operation</string>
+    <string name="without_defect">Without Defect</string>
+    <string name="defects_details">Defects Details</string>
+    <string name="total_defected_qty">Total Defected Qty</string>
+    <string name="add_defects_details">Add Defects Details</string>
+    <string name="defects_select_list">Defects Select List</string>
+    <string name="add">Add</string>
+    <string name="add_repair">Add repair</string>
+    <string name="repair_qty">Repair Qty</string>
+    <string name="rejected_qtn_txt">Rejected Qty</string>
+    <string name="rejection_request">Rejection Request</string>
+    <string name="random_quality_inspection">Random Quality Inspection</string>
+    <string name="job_order_qty">Job Order Qty</string>
+    <string name="rejected_qty">Rejected Qty</string>
+    <string name="create_rejection_request">Create Rejection Request</string>
 
 
 </resources>

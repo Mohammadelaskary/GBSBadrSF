@@ -14,7 +14,6 @@ import com.example.gbsbadrsf.Production.ProductionrepairAdapter;
 import com.example.gbsbadrsf.Productionrepairpaintcustomdialog;
 import com.example.gbsbadrsf.R;
 import com.example.gbsbadrsf.Util.OnClick;
-import com.example.gbsbadrsf.databinding.FragmentProductionrepairBinding;
 import com.example.gbsbadrsf.databinding.FragmentProductionrepairweBinding;
 import com.example.gbsbadrsf.databinding.ProductionrepairwedialogBinding;
 import com.example.gbsbadrsf.productionsequence.SimpleDividerItemDecoration;

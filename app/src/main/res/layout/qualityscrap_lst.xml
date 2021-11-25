@@ -26,7 +26,7 @@
             android:text="@string/job_order_name_txt"
             android:layout_marginTop="15dp"
             android:layout_marginStart="15dp"
-            style="@style/styleoftextbold"
+            style="@style/style_of_text_bold"
             />
         <TextView
             android:id="@+id/jobordername"
@@ -48,7 +48,7 @@
             android:text="@string/child_withoutspace"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="60dp"
-            style="@style/styleoftextbold"
+            style="@style/style_of_text_bold"
             />
         <TextView
             android:id="@+id/child"
@@ -70,7 +70,7 @@
             app:layout_constraintStart_toStartOf="@id/jobordernum_txt"
             android:text="@string/scrap_qtn_txt"
             android:layout_marginTop="15dp"
-            style="@style/styleoftextbold"
+            style="@style/style_of_text_bold"
             />
         <TextView
             android:id="@+id/scrapqtn"
@@ -92,7 +92,7 @@
 
             android:text="@string/dep"
             android:layout_marginTop="15dp"
-            style="@style/styleoftextbold"
+            style="@style/style_of_text_bold"
             />
         <TextView
             android:id="@+id/department"

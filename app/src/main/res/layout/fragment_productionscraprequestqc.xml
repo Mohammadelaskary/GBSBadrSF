@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         style="@style/styleoftextinappbar"
-        android:text="Quality Scrap Request"
+        android:text="Quality Rejection Request"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,11 +35,11 @@
             >
 
             <TextView
-                android:id="@+id/child_txt"
+                android:id="@+id/parent_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Child : "
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="@id/scrapquantity_txt"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="15dp"
@@ -51,8 +51,8 @@
                 android:text="@string/childdesc_txt"
                 android:layout_marginStart="2dp"
                 style="@style/styleoftext"
-                app:layout_constraintStart_toEndOf="@id/child_txt"
-                app:layout_constraintTop_toTopOf="@id/child_txt"
+                app:layout_constraintStart_toEndOf="@id/parent_txt"
+                app:layout_constraintTop_toTopOf="@id/parent_txt"
                 android:layout_marginTop="2dp"
                 />
             <TextView
@@ -75,7 +75,7 @@
         app:layout_constraintStart_toStartOf="@id/scrapquantity_txt"
         android:layout_marginTop="20dp"
         android:text="@string/job_order_name"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         />
     <TextView
         android:id="@+id/jobordername"
@@ -94,8 +94,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"
-        style="@style/styleoftextbold"
-        android:text="@string/scrap_qtn_txt"
+        style="@style/style_of_text_bold"
+        android:text="@string/rejected_qtn_txt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/jobordername_txt"
         />
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="15dp"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         android:text="Responsible Dep : "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/scrapquantity_txt"
@@ -142,7 +142,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="5dp"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         android:text="@string/notes"
         app:layout_constraintStart_toStartOf="@id/responsibledep_txt"
         app:layout_constraintTop_toBottomOf="@id/responsibledep_txt"

@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         android:text="@string/basket_code"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -75,7 +75,7 @@
         app:layout_constraintStart_toStartOf="@id/basketcode_txt"
         android:layout_marginTop="20dp"
         android:text="@string/operation_txt"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         />
     <TextView
         android:id="@+id/operation"
@@ -89,11 +89,11 @@
         app:layout_constraintStart_toEndOf="@id/operation_txt"
         />
     <TextView
-        android:id="@+id/child_txt"
+        android:id="@+id/parent_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/child"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         app:layout_constraintStart_toStartOf="@id/operation_txt"
         app:layout_constraintTop_toBottomOf="@id/operation_txt"
         android:layout_marginTop="20dp"
@@ -105,8 +105,8 @@
                 android:text="@string/childdesc_txt"
                 android:layout_marginStart="2dp"
                 style="@style/styleoftext"
-                app:layout_constraintStart_toEndOf="@id/child_txt"
-                app:layout_constraintTop_toTopOf="@id/child_txt"
+                app:layout_constraintStart_toEndOf="@id/parent_txt"
+                app:layout_constraintTop_toTopOf="@id/parent_txt"
                 android:layout_marginTop="2dp"
                 />
             <TextView
@@ -124,7 +124,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Defected Qty : "
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         app:layout_constraintStart_toStartOf="@id/operation_txt"
         app:layout_constraintTop_toBottomOf="@id/childcode"
         android:layout_marginTop="30dp"
@@ -159,7 +159,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:text="@string/defect_name"
         android:layout_marginTop="20dp"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         android:layout_marginStart="15dp"
         />
     <TextView
@@ -171,7 +171,7 @@
         android:text="@string/sample_qty"
         android:layout_marginStart="45dp"
 
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         />
     <TextView
         android:id="@+id/defectqty_txt"
@@ -180,7 +180,7 @@
         app:layout_constraintStart_toEndOf="@+id/sampleqty_txt"
         app:layout_constraintTop_toTopOf="@+id/defectname_txt"
         android:text="@string/defect_qty"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         android:layout_marginStart="72dp"
         />
             <TextView
@@ -191,7 +191,7 @@
                 app:layout_constraintTop_toTopOf="@+id/defectname_txt"
                 android:text="@string/repaired_qty"
 
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/approvedqtyintable_txt"
@@ -201,7 +201,7 @@
                 app:layout_constraintTop_toTopOf="@+id/defectname_txt"
                 android:text="@string/approved_qty"
 
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <View
                 android:id="@+id/view"
@@ -232,7 +232,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         android:text="Final desicion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hsv"

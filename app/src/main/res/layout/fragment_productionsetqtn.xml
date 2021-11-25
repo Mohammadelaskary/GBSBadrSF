@@ -64,11 +64,11 @@
         android:layout_marginEnd="10dp"
         />
     <TextView
-        android:id="@+id/child_txt"
+        android:id="@+id/parent_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/child"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         app:layout_constraintStart_toStartOf="@id/basketcode_txt"
         app:layout_constraintTop_toBottomOf="@id/basketcode_edt"
         android:layout_marginTop="20dp"
@@ -80,19 +80,19 @@
         android:text="shasah"
         android:layout_marginStart="2dp"
         style="@style/styleoftext"
-        app:layout_constraintStart_toEndOf="@id/child_txt"
-        app:layout_constraintTop_toTopOf="@id/child_txt"
+        app:layout_constraintStart_toEndOf="@id/parent_txt"
+        app:layout_constraintTop_toTopOf="@id/parent_txt"
         android:layout_marginTop="2dp"
         />
     <TextView
         android:id="@+id/jobordernum_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/child_txt"
-        app:layout_constraintStart_toStartOf="@id/child_txt"
+        app:layout_constraintTop_toBottomOf="@id/parent_txt"
+        app:layout_constraintStart_toStartOf="@id/parent_txt"
         android:layout_marginTop="20dp"
         android:text="@string/job_order_number_txt"
-        style="@style/styleoftextbold"
+        style="@style/style_of_text_bold"
         />
     <TextView
         android:id="@+id/jobordernum"

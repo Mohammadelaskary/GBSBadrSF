@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         style="@style/styleoftextinappbar"
-        android:text="@string/production_scrap"
+        android:text="@string/create_rejection_request"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="15dp"
 
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:text="@string/basket"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -78,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/child"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="@id/basket_txt"
                 app:layout_constraintTop_toBottomOf="@id/basket_edt"
                 android:layout_marginTop="20dp"
@@ -113,7 +113,7 @@
                 app:layout_constraintStart_toStartOf="@id/basket_txt"
                 android:layout_marginTop="20dp"
                 android:text="@string/job_order_number_txt"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/jobordername"
@@ -134,7 +134,7 @@
                 app:layout_constraintStart_toStartOf="@id/jobordername_txt"
                 android:layout_marginTop="20dp"
                 android:text="@string/basket_qtn"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/basketqtn"
@@ -148,13 +148,13 @@
                 app:layout_constraintStart_toEndOf="@id/basketqtn_txt"
                 />
             <TextView
-                android:id="@+id/scrapqtn_txt"
+                android:id="@+id/rejected_qty_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="15dp"
-                style="@style/styleoftextbold"
-                android:text="@string/scrap_qtn"
+                style="@style/style_of_text_bold"
+                android:text="@string/rejected_qty"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/basketqtn_txt"
                 />
@@ -165,8 +165,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="55dp"
-                app:layout_constraintStart_toStartOf="@id/scrapqtn_txt"
-                app:layout_constraintTop_toBottomOf="@id/scrapqtn_txt"
+                app:layout_constraintStart_toStartOf="@id/rejected_qty_txt"
+                app:layout_constraintTop_toBottomOf="@id/rejected_qty_txt"
                 android:background="@drawable/edt_bg"
                 android:textColor="@color/black"
 
@@ -177,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:text="@string/basket_code"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/scrapqtn_edt"
@@ -212,9 +212,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="5dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:text="Responsible"
-                app:layout_constraintStart_toStartOf="@id/scrapqtn_txt"
+                app:layout_constraintStart_toStartOf="@id/rejected_qty_txt"
                 app:layout_constraintTop_toBottomOf="@id/basketbarcode_img"
                 />
 

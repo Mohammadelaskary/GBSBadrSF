@@ -63,11 +63,11 @@ public class ManfacturingmenuFragment extends Fragment {
 //            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingmenuFragment_to_qualityscraplistFragment);
 //
 //        });
-//        fragmentManfacturingmenuBinding.productionrepairBtn.setOnClickListener(__ -> {
-//
-//            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingmenuFragment_to_productionrepairFragment);
-//
-//        });
+        fragmentManfacturingmenuBinding.productionrepairBtn.setOnClickListener(__ -> {
+
+            Navigation.findNavController(getView()).navigate(R.id.action_manufacturing_menu_fragment_to_production_repair_fragment);
+
+        });
 //        fragmentManfacturingmenuBinding.baskettransferBtn.setOnClickListener(__ -> {
 //
 //            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingmenuFragment_to_baskettransferFragment);

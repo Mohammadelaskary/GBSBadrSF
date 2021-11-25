@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/parent"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_marginTop="15dp"
@@ -73,7 +73,7 @@
                 app:layout_constraintStart_toStartOf="@id/parent_txt"
                 android:layout_marginTop="20dp"
                 android:text="@string/loaing_quantites"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/loadingqtns"
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="15dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:text="@string/station"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/loadingqtn_txt"
@@ -126,7 +126,7 @@
                 app:layout_constraintStart_toStartOf="@id/parent_txt"
                 android:layout_marginTop="20dp"
                 android:text="@string/operation_txt"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/operation"
@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:text="Child Basket Code"
                 app:layout_constraintStart_toStartOf="@id/operation_txt"
                 app:layout_constraintTop_toBottomOf="@id/operation_txt"
@@ -178,7 +178,7 @@
                 app:layout_constraintStart_toStartOf="@id/parent_txt"
                 android:layout_marginTop="20dp"
                 android:text="child Qty : "
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
 
 

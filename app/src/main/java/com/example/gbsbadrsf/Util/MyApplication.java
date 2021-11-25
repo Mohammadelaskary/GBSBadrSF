@@ -1,8 +1,12 @@
 package com.example.gbsbadrsf.Util;
 
+import android.content.Context;
 import android.content.res.Configuration;
 
 import androidx.annotation.NonNull;
+import androidx.multidex.MultiDex;
+import androidx.multidex.MultiDexApplication;
+
 
 import com.example.gbsbadrsf.di.component.DaggerApplicationComponent;
 
@@ -15,5 +19,9 @@ public class MyApplication extends DaggerApplication {
         return DaggerApplicationComponent.builder().Application(this).build();
     }
 
-
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        MultiDex.install(this);
+    }
 }

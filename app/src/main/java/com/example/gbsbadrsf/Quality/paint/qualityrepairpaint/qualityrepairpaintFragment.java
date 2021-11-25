@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 
 import com.example.gbsbadrsf.Quality.manfacturing.qualityrepair.qualityrepairAdapter;
 import com.example.gbsbadrsf.R;
-import com.example.gbsbadrsf.databinding.FragmentQualityrepairBinding;
 import com.example.gbsbadrsf.databinding.FragmentQualityrepairpaintBinding;
 import com.example.gbsbadrsf.productionsequence.SimpleDividerItemDecoration;
 

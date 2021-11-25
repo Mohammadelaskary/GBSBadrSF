@@ -8,7 +8,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.gbsbadrsf.Quality.manfacturing.Adddefects.AdddefectsAdapter;
 import com.example.gbsbadrsf.databinding.DefectnameandcodeLstBinding;
 
 public class AdddefectpaintAdapter extends RecyclerView.Adapter<AdddefectpaintAdapter.AdddefectpaintViewHolder> {

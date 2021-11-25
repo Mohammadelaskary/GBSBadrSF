@@ -18,14 +18,14 @@ import com.example.gbsbadrsf.databinding.FragmentScraprequestBinding;
 
 
 public class ProductionscraprequestqcFragment extends Fragment {
-    FragmentProductionscraprequestqcBinding fragmentProductionscraprequestqcBinding;
+    FragmentProductionscraprequestqcBinding binding;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        fragmentProductionscraprequestqcBinding = FragmentProductionscraprequestqcBinding.inflate(inflater,container,false);
-        return fragmentProductionscraprequestqcBinding.getRoot();
+        binding = FragmentProductionscraprequestqcBinding.inflate(inflater,container,false);
+        return binding.getRoot();
     }
 
 

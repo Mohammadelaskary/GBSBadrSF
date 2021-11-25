@@ -15,7 +15,7 @@ import com.example.gbsbadrsf.databinding.FragmentManfacturingqualityBinding;
 
 
 public class ManfacturingqualityFragment extends Fragment {
-    FragmentManfacturingqualityBinding fragmentManfacturingqualityBinding;
+    FragmentManfacturingqualityBinding binding;
 
 
     public ManfacturingqualityFragment() {
@@ -23,10 +23,8 @@ public class ManfacturingqualityFragment extends Fragment {
     }
 
 
-    public static ManfacturingqualityFragment newInstance(String param1, String param2) {
-        ManfacturingqualityFragment fragment = new ManfacturingqualityFragment();
-
-        return fragment;
+    public static ManfacturingqualityFragment newInstance() {
+        return new ManfacturingqualityFragment();
     }
 
     @Override
@@ -38,41 +36,46 @@ public class ManfacturingqualityFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        fragmentManfacturingqualityBinding = FragmentManfacturingqualityBinding.inflate(inflater,container,false);
+        binding = FragmentManfacturingqualityBinding.inflate(inflater,container,false);
         attachListeners();
-        return fragmentManfacturingqualityBinding.getRoot();
+        return binding.getRoot();
 
     }
 
     private void attachListeners() {
-        fragmentManfacturingqualityBinding.adddefectBtn.setOnClickListener(__ -> {
+        binding.qualityOperationBtn.setOnClickListener(v -> {
 
-            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_addDefectsFragment);
-
-        });
-        fragmentManfacturingqualityBinding.qualityrepairBtn.setOnClickListener(__ -> {
-
-            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_qualityrepairFragment);
+            Navigation.findNavController(v).navigate(R.id.action_manfacturingqualityFragment_to_quality_operation_fragment);
 
         });
-        fragmentManfacturingqualityBinding.qualitydesicionBtn.setOnClickListener(__ -> {
+        binding.qualityrepairBtn.setOnClickListener(v -> {
 
-            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_qualitydesicionFragment);
-
-        });
-        fragmentManfacturingqualityBinding.adddefectBtn.setOnClickListener(__ -> {
-
-            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_addDefectsFragment);
+            Navigation.findNavController(v).navigate(R.id.action_manfacturingqualityFragment_to_qualityrepairFragment);
 
         });
-        fragmentManfacturingqualityBinding.productionscraprequestBtn.setOnClickListener(__ -> {
+        binding.qualitydesicionBtn.setOnClickListener(v -> {
 
-            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_productionscraplistinqualityFragment);
+            Navigation.findNavController(v).navigate(R.id.action_manfacturingqualityFragment_to_qualitydesicionFragment);
 
         });
-        fragmentManfacturingqualityBinding.scraprequestBtn.setOnClickListener(__ -> {
+//        fragmentManfacturingqualityBinding.adddefectBtn.setOnClickListener(__ -> {
+//
+//            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_addDefectsFragment);
+//
+//        });
+        binding.productionscraprequestBtn.setOnClickListener(v -> {
 
-            Navigation.findNavController(getView()).navigate(R.id.action_manfacturingqualityFragment_to_productionscrapFragment);
+            Navigation.findNavController(v).navigate(R.id.action_manfacturingqualityFragment_to_productionscraplistinqualityFragment);
+
+        });
+        binding.rejectionRequestBtn.setOnClickListener(v -> {
+
+            Navigation.findNavController(v).navigate(R.id.action_manfacturingqualityFragment_to_productionscrapFragment);
+
+        });
+        binding.randomQualityInspection.setOnClickListener(v -> {
+
+            Navigation.findNavController(v).navigate(R.id.action_fragment_manufacturing_quality_to_fragment_random_quality_inception);
 
         });
 

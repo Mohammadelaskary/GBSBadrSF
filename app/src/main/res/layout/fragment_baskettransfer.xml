@@ -39,7 +39,7 @@
 
             <TextView
                 android:id="@+id/basketfrom_txt"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -69,11 +69,11 @@
         android:layout_marginEnd="10dp"
         />
             <TextView
-                android:id="@+id/child_txt"
+                android:id="@+id/parent_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Child : "
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/basketfrom_edt"
                 android:layout_marginTop="15dp"
@@ -86,8 +86,8 @@
                 android:text="@string/childdesc_txt"
                 android:layout_marginStart="2dp"
                 style="@style/styleoftext"
-                app:layout_constraintStart_toEndOf="@id/child_txt"
-                app:layout_constraintTop_toTopOf="@id/child_txt"
+                app:layout_constraintStart_toEndOf="@id/parent_txt"
+                app:layout_constraintTop_toTopOf="@id/parent_txt"
                 android:layout_marginTop="2dp"
                 />
             <TextView
@@ -108,7 +108,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/basket_to"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="@id/basketfrom_txt"
                 app:layout_constraintTop_toBottomOf="@id/childcode"
                 android:layout_marginTop="20dp"
@@ -140,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/qty"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="@id/basketto_txt"
                 app:layout_constraintTop_toBottomOf="@id/basketto_edt"
                 android:layout_marginTop="20dp"

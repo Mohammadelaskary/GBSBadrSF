@@ -30,7 +30,7 @@ public class productionsequenceadapter  extends RecyclerView.Adapter<productions
         Productionsequenceresponse.addAll(productionsequencelst);
         notifyDataSetChanged();
     }
-  
+
 
     @NonNull
     @Override

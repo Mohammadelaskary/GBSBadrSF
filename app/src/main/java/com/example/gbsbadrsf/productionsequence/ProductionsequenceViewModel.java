@@ -38,13 +38,14 @@ public class ProductionsequenceViewModel extends ViewModel {
     }
     @Inject
      void getProductionsequence(){
-        disposable.add(apiInterface.getproductionsequence(null,deviceserialnumber)
+
+        disposable.add(apiInterface.getproductionsequence(1,"S123")
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe( __ -> status.postValue(Status.LOADING))
                 .subscribe(
                         cuisines -> {productionsequenceResponse.postValue(cuisines.getData());
-                            status.postValue(Status.SUCCESS);},
+                            status.postValue(Status.SUCCESS); },
                         throwable -> {
                             status.postValue(Status.ERROR);
                         }

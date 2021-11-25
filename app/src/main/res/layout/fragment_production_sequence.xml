@@ -43,7 +43,7 @@
                 app:layout_constraintEnd_toStartOf="@id/qcnotes_txt"
                 android:text="@string/sequence_num"
                 android:layout_marginTop="25dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:layout_marginStart="15dp"
                 />
             <TextView
@@ -55,7 +55,7 @@
                 android:text="Child"
                 android:layout_marginStart="35dp"
 
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/productionnotes_txt"
@@ -64,7 +64,7 @@
                 app:layout_constraintStart_toEndOf="@+id/qcnotes_txt"
                 app:layout_constraintTop_toTopOf="@+id/defectname_txt"
                 android:text="Loadin Qty"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:layout_marginStart="85dp"
                 />
             <TextView
@@ -75,7 +75,7 @@
                 app:layout_constraintTop_toTopOf="@+id/defectname_txt"
                 android:text="@string/status"
                 android:layout_marginStart="75dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <View
                 android:id="@+id/view"

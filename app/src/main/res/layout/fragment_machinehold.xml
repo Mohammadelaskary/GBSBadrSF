@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/machine_code"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="15dp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -74,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/child"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 app:layout_constraintStart_toStartOf="@id/machinecode_txt"
                 app:layout_constraintTop_toBottomOf="@id/machinecode_edt"
                 android:layout_marginTop="20dp"
@@ -108,7 +108,7 @@
                 app:layout_constraintStart_toStartOf="@id/childcode_txt"
                 android:layout_marginTop="15dp"
                 android:text="@string/job_order_number_txt"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/jobordernum"
@@ -127,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 android:text="@string/loading_qty"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/jobordernum"
@@ -151,7 +151,7 @@
                 app:layout_constraintStart_toStartOf="@id/machinecode_txt"
                 app:layout_constraintTop_toBottomOf="@id/loadingquantity_txt"
                 android:text="@string/operation_txt"
-                style="@style/styleoftextbold"
+                style="@style/style_of_text_bold"
                 />
             <TextView
                 android:id="@+id/operation"

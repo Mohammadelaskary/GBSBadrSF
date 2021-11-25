@@ -47,9 +47,9 @@ public class QualityweldingFragment extends Fragment {
     }
 
     private void attachListeners() {
-        fragmentQualityweldingBinding.adddefectBtn.setOnClickListener(__ -> {
+        fragmentQualityweldingBinding.qualityOperationBtn.setOnClickListener(__ -> {
 
-            Navigation.findNavController(getView()).navigate(R.id.action_qualityweldingFragment_to_adddefectwe);
+            Navigation.findNavController(getView()).navigate(R.id.action_quality_welding_fragment_to_welding_quality_operation);
 
         });
         fragmentQualityweldingBinding.qualityrepairBtn.setOnClickListener(__ -> {

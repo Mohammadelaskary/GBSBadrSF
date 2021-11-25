@@ -48,7 +48,7 @@ public class PaintqualityFragment extends Fragment {
     }
 
     private void attachListeners() {
-        fragmentPaintqualityBinding.adddefectBtn.setOnClickListener(__ -> {
+        fragmentPaintqualityBinding.qualityOperationBtn.setOnClickListener(__ -> {
 
             Navigation.findNavController(getView()).navigate(R.id.action_paintqualityFragment_to_adddefectpaint);
 
